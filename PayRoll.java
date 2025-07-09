@@ -11,16 +11,16 @@ public class PayRoll {
                 System.out.println("Employees processed polymorphically:\n");
 
                 for (Employee emp : employees) {
-                    System.out.println(emp);  // toString()
+                    System.out.println(emp);  
 
-                    // Increase base salary if applicable
+                   
                     if (emp instanceof BasePlusCommissionEmployee) {
                         BasePlusCommissionEmployee baseEmp = (BasePlusCommissionEmployee) emp;
-                        baseEmp.increaseBaseSalary(10);  // increase by 10%
+                        baseEmp.increaseBaseSalary(10);  
                         System.out.println("Base salary increased by 10%.");
                     }
 
-                    System.out.printf("Earnings: $%.2f\n\n", emp.earnings());  // earnings()
+                    System.out.printf("Earnings: $%.2f\n\n", emp.earnings()); 
                 }
             }
         }
